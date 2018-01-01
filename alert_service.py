@@ -1,5 +1,6 @@
 import aurora_spider
 import push_api
+import push_config
 
 aSpider = aurora_spider.Aurora_spider()
 aPush = push_api.Push_api()
@@ -8,7 +9,7 @@ aPush = push_api.Push_api()
 forecast = aSpider.sniff_short()
 
 # Check if need to send notification
-kp_threshold = 1
+kp_threshold = push_config.threshold
 w = [z[0] for z in enumerate(list(map(float,[forecast[2], forecast[4], forecast[6]]))) if z[1] > kp_threshold]
 if w != []:
     w = w[0]
