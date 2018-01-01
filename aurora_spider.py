@@ -22,4 +22,4 @@ class Aurora_spider:
             kp_value[5].text, re.findall(p, kp_value[6].text)[0]]
 
     def sniff_long(self):
-        
+        pass
