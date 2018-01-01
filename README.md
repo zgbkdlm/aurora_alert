@@ -15,7 +15,7 @@ The alert application consists of three independent parts: aurora spider, push s
 
 What you have to do is to write your own push program in ```push_api.py```  
 
-Note that a Telegram Bot push service has been written for you in advance.
+Note that a Telegram Bot push service has been written for you in advance. You have to create your own bot and start a chat with it.
 
 After all that, write a suitable crontab for ```alert_service.py```, for example:  
 ```
