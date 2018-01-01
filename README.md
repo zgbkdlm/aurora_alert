@@ -21,5 +21,5 @@ After all that, write a suitable crontab for ```alert_service.py```, for example
 ```
 */30 * * * * python3 /path-to/alert_service.py
 ```
-
+ 
 Or, you can also treat alert_service as daemon process. 
