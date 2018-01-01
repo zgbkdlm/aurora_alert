@@ -14,6 +14,7 @@ class Aurora_spider:
         soup = BeautifulSoup(html_content)
         
         kp_value = soup.find_all(style="color: #0000ff;")
+        p=r'\w\.\w\w$'
         
         return short_forecast
         
